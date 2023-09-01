@@ -4,3 +4,6 @@
 [submodule "spec-fuzzer"]
 	path = spec-fuzzer
 	url = https://github.com/Blarse/spec-fuzzer.git
+[submodule "QEMU-Nyx"]
+	path = QEMU-Nyx
+	url = https://github.com/nyx-fuzz/QEMU-Nyx
