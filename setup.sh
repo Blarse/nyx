@@ -19,7 +19,6 @@ sed -i  '/^all:/i LDFLAGS += -ldl\n' ./utils/afl_network_proxy/GNUmakefile
 make NO_NYX=1 -j $(nproc) source-only
 cd -
 
-
 # Build spec-fuzzer
 git submodule update spec-fuzzer 2>/dev/null ||:
 cd spec-fuzzer
@@ -30,4 +29,10 @@ cd -
 git submodule update QEMU-Nyx 2>/dev/null ||:
 cd QEMU-Nyx
 LD_FLAVOUR=lld ./compile_qemu_nyx.sh lto
+cd -
+
+# Build packer
+git submodule update packer 2>/dev/null ||:
+cd packer/linux_initramfs
+sh ./pack_alt.sh
 cd -

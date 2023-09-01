@@ -7,3 +7,6 @@
 [submodule "QEMU-Nyx"]
 	path = QEMU-Nyx
 	url = https://github.com/nyx-fuzz/QEMU-Nyx
+[submodule "packer"]
+	path = packer
+	url = https://github.com/Blarse/packer.git
