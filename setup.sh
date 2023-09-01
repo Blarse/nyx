@@ -2,7 +2,9 @@
 
 git submodule init
 
-export ALTWRAP_LLVM_VERSION=15.0
+# Set clang/llvm version manually:
+#export ALTWRAP_LLVM_VERSION=16.0
+
 export CC=clang
 export CXX=clang++
 export LD=ld.lld
