@@ -17,6 +17,7 @@ cd AFLplusplus
 sed -i  '/^all:/i LDFLAGS += -ldl\n' ./utils/afl_network_proxy/GNUmakefile
 
 make NO_NYX=1 -j $(nproc) source-only
+git restore ./utils/afl_network_proxy/GNUmakefile
 cd -
 
 # Build spec-fuzzer
