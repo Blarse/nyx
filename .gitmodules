@@ -1,3 +1,6 @@
 [submodule "AFLplusplus"]
 	path = AFLplusplus
 	url = https://github.com/AFLplusplus/AFLplusplus.git
+[submodule "spec-fuzzer"]
+	path = spec-fuzzer
+	url = https://github.com/Blarse/spec-fuzzer.git
